@@ -19,12 +19,12 @@ export default function Home() {
           <p className={puff.className} style={{ fontSize: "60px", color: "#0B2447" }}>NFT</p>
         </header>
         <div className={styles.main_body}>
-          <p className={comfort.className} style={{ fontSize: "45px" }}> CREATE NFT's with THOUGHTS</p>
+          <p className={comfort.className} style={{ fontSize: "45px" }}> CREATE NFT's with WORDS</p>
           <br />
           <br />
           <p className={comfort.className} style={{ fontSize: "25px" }}>ArtiNFT is a blockchain tool that lets you create NFTs from a text or description </p>
           <br />
-          <p className={comfort.className} style={{ fontSize: "25px" }}>using Stability.ai API that uses text-to-image AI model.</p>
+          <p className={comfort.className} style={{ fontSize: "25px" }}>using stable diffusion text-to-image model API from StabilityAI.</p>
         </div>
       </main>
     </>
