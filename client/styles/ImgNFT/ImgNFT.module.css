@@ -1,0 +1,10 @@
+.main {
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    border: 8px solid red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
