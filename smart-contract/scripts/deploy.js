@@ -10,6 +10,7 @@ async function main() {
   await artnft.deployed()
 
   console.log(`Deployed ArtNFT Contract at: ${artnft.address}`)
+  //Deployed at Goerli Testnet : 0xe8c9ed625c71695233c80Bf38f45B1820b0ea8eB
 }
 
 // We recommend this pattern to be able to use async/await everywhere
