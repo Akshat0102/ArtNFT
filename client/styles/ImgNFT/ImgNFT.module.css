@@ -1,10 +1,42 @@
 .main {
     display: flex;
-    min-height: 100vh;
-    min-width: 100vw;
-    border: 8px solid red;
+    height: 100vh;
+    width: 100vw;
+    background-color: #A7B9FF;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+}
+
+.generator {
+    display: flex;
+    height: 85vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.metaForm {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnsection{
+    width: 75%;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imageLoad {
+    display: flex;
+    width: 45%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
 }

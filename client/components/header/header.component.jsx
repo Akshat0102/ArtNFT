@@ -1,26 +1,13 @@
-import { React, useState } from "react";
 import { Button } from "antd";
 import { DynaPuff } from 'next/font/google'
+import { useContext } from "react";
+import { AuthContext } from "@/context/AuthContext";
 
 const puff = DynaPuff({ subsets: ['latin'], weight: ['400'] })
 
-const Header = ({ accountAddress, setAccountAddress, setUserConnected }) => {
+const Header = () => {
 
-    const connectWallet = async () => {
-
-        if (!window.ethereum) {
-            alert("Metamask Extension not installed!!")
-        } else {
-            try {
-                const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-                setAccountAddress(accounts[0]);
-                setUserConnected(true);
-            } catch (err) {
-                console.log(err);
-                alert('Error connecting...');
-            }
-        }
-    }
+    const { connectWallet, accountAddress } = useContext(AuthContext);
 
     return (
         <div className="header">

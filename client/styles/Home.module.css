@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  background-image: url('/back1.svg'); 
+  background-image: url('/back1.svg');
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: space-between;
@@ -9,7 +9,16 @@
   min-height: 100vh;
 }
 
-.main_body{
+.header {
+  display: flex;
+  min-width: 100vw;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px 0px 40px;
+}
+
+.main_body {
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -19,7 +28,7 @@
   align-items: center;
 }
 
-.main_body p{
+.main_body p {
   text-align: center;
   line-height: 2.5rem;
 }
